@@ -17,7 +17,7 @@ $database = new medoo([
 $database->insert("tb_personal", [
 	"nombre" => $_POST["nombre"],
 	"apellido" => $_POST["apellido"],
-	"departamento"=> $_POST["id_departamento"]
+	"id_departamento"=> $_POST["departamento"]
 ]);
 }
 
@@ -36,7 +36,7 @@ $database->insert("tb_personal", [
  	<label for="">Apellido</label>
   	<input type="text" name="apellido">
 
- 	<select name="" id="">
+ 	<select name="departamento" id="">
 	  <?php
 	  $data=$database->select("tb_departamentos","*");
 	  $len=count($data);

@@ -25,7 +25,7 @@ $database = new medoo([
 <?php
 	$len=count($data);
 	for($i=0;$i<$len;$i++){
-	echo"<li>".$data[$i]["nombre"]." ".$data[$i]["apellido"]." ".$data[$i]["departamento"]."</li>";
+	echo"<li>".$data[$i]["nombre"]." ".$data[$i]["apellido"]." ".$data[$i]["id_departamento"]." <a href='editar.php?id=".$data[$i]["id_personal"]."'>Editar</a> | <a href=''>Eliminar</a></li>";
 	}
 
 	?>

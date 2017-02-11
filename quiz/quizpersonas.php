@@ -15,7 +15,7 @@
 	$elementos=count($nombres);
 	echo $elementos;
  	for ($i=0; $i < $elementos ; $i++) {
- 	echo "<li><a>" . $nombres[$i]. "</a></li>";
+ 	echo "<li><a href=''>" . $nombres[$i]. "</a></li>";
  	}
  	?>
 
