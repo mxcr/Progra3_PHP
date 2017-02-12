@@ -1,5 +1,5 @@
 <?php
-echo"hola";
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,10 +8,6 @@ echo"hola";
 </head>
 <body>
 
-// if ($_GET) {
-// 	echo "<h3>La persona selecionada es: 
-// 	</h3>".$lenguajes[$_GET["id"]];
-// }
 	<?php
 
 	
@@ -19,10 +15,10 @@ echo"hola";
 	$elementos=count($nombres);
 	echo $elementos;
  	for ($i=0; $i < $elementos ; $i++) {
- 	echo "<li>"  $nombres[$i] "</li>";
+ 	echo "<li><a>" . $nombres[$i]. "</a></li>";
  	}
  	?>
 
 
 </body>
-</html> -->
+</html>
